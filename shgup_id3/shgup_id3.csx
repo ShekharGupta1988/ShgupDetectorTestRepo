@@ -8,8 +8,8 @@ private static string GetQuery(OperationContext<App> cxt)
         | <YOUR_QUERY>";
 }
  
-[AppFilter(AppType = AppType.WebApp, PlatformType = PlatformType.Windows, StackType = StackType.All)]
-[Definition(Id = "shgup_id3", Name = "Shgup Test 3", Author = "shgup", Description = "")]
+[AppFilter(AppType = AppType.WebApp, PlatformType = PlatformType.Linux, StackType = StackType.All)]
+[Definition(Id = "shgup_id3", Name = "Shgup Test 3 (Linux)", Author = "shgup", Description = "")]
 public async static Task<Response> Run(DataProviders dp, OperationContext<App> cxt, Response res)
 {
     await Task.Delay(1);
