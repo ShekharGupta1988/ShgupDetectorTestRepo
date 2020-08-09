@@ -1,1 +1,1 @@
-{"dependencies":{"globalgist":"0d2cdff09ed20de6ab3085730a04af6f001a84dc"},"id":"shgupEventHubDetector1","name":"Shgup Event Hub Detector 1","author":"shgup","description":"","category":null,"type":"Detector"}
+{"dependencies":{"globalgist":"0d2cdff09ed20de6ab3085730a04af6f001a84dc","eventhubGist":"6aeb61c98e387ef36132fd28399cd0c0374ca720"},"id":"shgupEventHubDetector1","name":"Shgup Event Hub Detector 1","author":"shgup","description":"","category":null,"type":"Detector"}

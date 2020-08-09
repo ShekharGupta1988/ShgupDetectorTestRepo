@@ -1,4 +1,5 @@
 #load "globalgist"
+#load "eventhubGist"
 using System;
 
 [ArmResourceFilter(provider: "Microsoft.EventHub", resourceTypeName: "namespaces")]
@@ -6,6 +7,7 @@ using System;
 public async static Task<Response> Run(DataProviders dp, OperationContext<ArmResource> cxt, Response res)
 {
     await Task.Delay(1);
+    res.AddMarkdownView(EventHubGist.Invoke());
     res.AddMarkdownView(GlobalGist.Invoke(cxt.Resource.SubscriptionId, "EventHubDetector"));
     return res;
 }
