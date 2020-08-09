@@ -5,5 +5,8 @@ using System.Threading;
 [Definition(Id = "eventhubGist", Name = "Evnent Hub Gist", Author = "shgup", Description = "")]
 public static class EventHubGist
 {
-
+    public static string Invoke()
+    {
+        return "FooBar";
+    }
 }
