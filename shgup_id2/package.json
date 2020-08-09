@@ -1,1 +1,1 @@
-{"dependencies":{},"id":"shgup_id2","name":"Shgup Test 2","author":"shgup","description":"","category":null,"type":"Detector"}
+{"dependencies":{"globalgist":"0d2cdff09ed20de6ab3085730a04af6f001a84dc"},"id":"shgup_id2","name":"Shgup Test 2","author":"shgup","description":"","category":null,"type":"Detector"}
