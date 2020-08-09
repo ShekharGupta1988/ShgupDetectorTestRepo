@@ -7,6 +7,6 @@ public static class EventHubGist
 {
     public static string Invoke()
     {
-        return "FooBar";
+        return "String from EventHib Gist";
     }
 }
