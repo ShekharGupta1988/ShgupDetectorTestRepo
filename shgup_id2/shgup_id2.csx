@@ -1,4 +1,5 @@
 #load "globalgist"
+#load "microsoftwebGist"
 
 [SupportTopic(Id = "32635056", PesId = "15614")] 
 [AppFilter(AppType = AppType.WebApp, PlatformType = PlatformType.Windows, StackType = StackType.All)]
@@ -8,7 +9,7 @@ public async static Task<Response> Run(DataProviders dp, OperationContext<App> c
     await Task.Delay(1);
     res.AddInsight(new Insight(InsightStatus.Critical, "Detector Invoked - Shgup Test 2, Id: shgup_id2"));
     res.AddMarkdownView(GlobalGist.Invoke(cxt.Resource.SubscriptionId, "Web App Detector"));
-
+    res.AddMarkdownView(MicrosoftWebGist.Invoke());
     return res;
 
 }
