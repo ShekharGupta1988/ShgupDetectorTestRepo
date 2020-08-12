@@ -1,3 +1,5 @@
+#load "globalgist"
+
 using System;
 using System.Threading;
 
@@ -8,6 +10,8 @@ public async static Task<Response> Run(DataProviders dp, OperationContext<ArmRes
 {
     await Task.Delay(1);
     res.AddMarkdownView("In Event Hub Detector");
+
+    res.AddMarkdownView(GlobalGist.Invoke());
 
     return res;
 }
