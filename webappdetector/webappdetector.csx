@@ -1,3 +1,4 @@
+#load "globalgist"
 
 [AppFilter(AppType = AppType.WebApp, PlatformType = PlatformType.Windows, StackType = StackType.All)]
 [Definition(Id = "webappdetector", Name = "Shgup Web App Detector", Author = "shgup", Description = "")]
@@ -5,6 +6,8 @@ public async static Task<Response> Run(DataProviders dp, OperationContext<App> c
 {
     await Task.Delay(1);
     res.AddMarkdownView("In Web App Detector");
+
+     res.AddMarkdownView(GlobalGist.Invoke());
 
     return res;
 }
